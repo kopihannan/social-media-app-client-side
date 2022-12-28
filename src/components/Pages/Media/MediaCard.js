@@ -1,12 +1,11 @@
 import React from 'react';
-import like from '../../assets/images/like.png'
-import commentlogo from '../../assets/images/comment.png'
-import send from '../../assets/images/send.png'
+import like from '../../../assets/images/like.png'
+import commentlogo from '../../../assets/images/comment.png'
+import send from '../../../assets/images/send.png'
 import { Link } from 'react-router-dom';
 
-
-const ShowPostCard = ({ post, refetch }) => {
-    const { postMessage, image, _id, likes, comment } = post;
+const MediaCard = ({ post, refetch }) => {
+    const { postMessage, image, _id, likes , comment} = post;
 
 
     const handleLikeClick = () => {
@@ -111,4 +110,5 @@ const ShowPostCard = ({ post, refetch }) => {
     );
 };
 
-export default ShowPostCard;
+
+export default MediaCard;

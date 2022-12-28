@@ -1,7 +1,7 @@
 
 const imageUpload = async image => {
 
-    const imageHostKey = "11812b76138a1ea361ef52e83eb3b0c2"
+    const imageHostKey = process.env.REACT_APP_image_api
 
     if (image) {
       const formData = new FormData()
