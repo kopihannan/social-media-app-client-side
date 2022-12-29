@@ -38,6 +38,8 @@ const Header = () => {
                         <li className=' mr-4'><Link to='/'>Home</Link></li>
                         <li className=' mr-4'><Link >About</Link></li>
                         <li className=' mr-4'><Link to='/media'>Media</Link></li>
+                        <li className=' mr-4'><Link to='/login'>Login</Link></li>
+
 
 
                         <div className='bg-slate-100 p-3 rounded-lg w-12 mr-4'>
