@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/telechat.png'
 import message from '../../assets/images/message.png'
 import notification from '../../assets/images/notification.png'
+import { AuthContext } from '../../Authentication/AuthProvider';
 
 
 const Header = () => {
+
+    const { userLogout } = useContext(AuthContext);
+
+
+    const hangleLogout = () => {
+        userLogout()
+            .then(() => {
+
+            }).catch(() => {
+
+            });
+    }
+
     return (
         <div className='py-2 px-10'>
             <div className="navbar bg-base-100">
@@ -26,6 +40,7 @@ const Header = () => {
                             </div>
                             <li className=' mx-auto mb-3'><Link to='/media'>Media</Link></li>
                             <li className=' mx-auto mb-3'><Link >About</Link></li>
+                            <button onClick={hangleLogout} className=' mr-4'>Logout</button>
                         </ul>
                     </div>
                     <Link to='/' className="mr-4"><img className='w-10' src={logo} alt="" /></Link>
@@ -38,7 +53,7 @@ const Header = () => {
                         <li className=' mr-4'><Link to='/'>Home</Link></li>
                         <li className=' mr-4'><Link >About</Link></li>
                         <li className=' mr-4'><Link to='/media'>Media</Link></li>
-                        <li className=' mr-4'><Link to='/login'>Login</Link></li>
+                        <button onClick={hangleLogout} className=' mr-4'>Logout</button>
 
 
 
@@ -48,8 +63,9 @@ const Header = () => {
                         <div className='bg-slate-100 p-3 rounded-lg w-12 mr-4'>
                             <img className='w-5 ' src={notification} alt="" />
                         </div>
-                        <div className="w-12">
+                        <div className="w-10 online avatar">
                             <img className='w-11  rounded-lg' src="https://placeimg.com/192/192/people" alt='' />
+                            
                         </div>
                     </ul>
                 </div>
