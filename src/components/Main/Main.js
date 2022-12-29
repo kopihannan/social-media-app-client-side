@@ -14,7 +14,7 @@ const Main = () => {
             {
                 user? <div>
                 <Header></Header>
-                <div className='grid grid-cols-4 gap-8 bg-red-100 rounded-sm py-6'>
+                <div className='grid grid-cols-4 gap-8 bg-[#BFEAF5] rounded-sm py-6'>
                     <Leftside></Leftside>
                     <div className='col-span-2'>
                         <Outlet></Outlet>

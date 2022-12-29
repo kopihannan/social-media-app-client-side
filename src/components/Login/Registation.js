@@ -76,7 +76,7 @@ const Registation = () => {
 
 
     return (
-        <div className='bg-gradient-to-r from-violet-500 to-fuchsia-500'>
+        <div className='bg-gradient-to-r from-[#4abace] to-[#7ee4f7] px-8'>
             {
                 user && (
                     <Navigate to="/" replace={true} />
@@ -126,7 +126,7 @@ const Registation = () => {
                             </form>
                             <div className='flex justify-evenly pt-2'>
                                 <span>Have an account?</span>
-                                <Link to='/login' className=' text-[#8ee7fd] hover:text-[#11cfff]'>Login</Link>
+                                <Link to='/login' className=' text-[#000000] hover:text-[#463721]'>Login</Link>
                             </div>
                             <div className="divider">OR</div>
                             <div className='flex justify-center'>

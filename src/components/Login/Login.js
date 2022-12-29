@@ -54,7 +54,7 @@ const Login = () => {
     }
 
     return (
-        <div className='bg-gradient-to-r from-violet-500 to-fuchsia-500'>
+        <div className='bg-gradient-to-r from-[#4abace] to-[#7ee4f7] px-8'>
             <div className="hero min-h-screen">
                 <div className="hero-content items-center flex-col lg:flex-row">
                     <div className="text-center lg:text-left">
@@ -85,7 +85,7 @@ const Login = () => {
                             </form>
                             <div className='flex justify-evenly pt-2'>
                                 <span>Do you have no account?</span>
-                                <Link to='/register' className=' text-[#8ee7fd] hover:text-[#11cfff]'>Register Now</Link>
+                                <Link to='/register' className=' text-[#000000] hover:text-[#463721]'>Register Now</Link>
                             </div>
                             <div className="divider">OR</div>
                             <div className='flex justify-center'>

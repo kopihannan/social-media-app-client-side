@@ -21,8 +21,8 @@ const Header = () => {
     }
 
     return (
-        <div className='py-2 px-10'>
-            <div className="navbar bg-base-100">
+        <div className='py-2 px-10  bg-[#91D8E4] shadow-lg'>
+            <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden ">
@@ -39,7 +39,7 @@ const Header = () => {
                                 <img className='w-5 ' src={notification} alt="" />
                             </div>
                             <li className=' mx-auto mb-3'><Link to='/media'>Media</Link></li>
-                            <li className=' mx-auto mb-3'><Link >About</Link></li>
+                            <li className=' mx-auto mb-3'><Link to='/about'>About</Link></li>
                             <button onClick={hangleLogout} className=' mr-4'>Logout</button>
                         </ul>
                     </div>
@@ -51,7 +51,7 @@ const Header = () => {
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex items-center">
                         <li className=' mr-4'><Link to='/'>Home</Link></li>
-                        <li className=' mr-4'><Link >About</Link></li>
+                        <li className=' mr-4'><Link to='/about'>About</Link></li>
                         <li className=' mr-4'><Link to='/media'>Media</Link></li>
                         <button onClick={hangleLogout} className=' mr-4'>Logout</button>
 
