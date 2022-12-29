@@ -22,7 +22,7 @@ const PostModal = ({refetch}) => {
     
     const post = (postMessage, image) => {
         const post = { postMessage, image }
-        fetch('http://localhost:5000/post', {
+        fetch('https://social-media-hazel.vercel.app/post', {
 
             method: 'POST',
             headers: {

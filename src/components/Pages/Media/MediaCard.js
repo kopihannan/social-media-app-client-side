@@ -20,7 +20,7 @@ const MediaCard = ({ post, refetch }) => {
         }
 
 
-        fetch(`http://localhost:5000/post/${_id}`, {
+        fetch(`https://social-media-hazel.vercel.app/post/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
@@ -51,7 +51,7 @@ const MediaCard = ({ post, refetch }) => {
             comment,
         }
 
-        fetch(`http://localhost:5000/posts/${_id}`, {
+        fetch(`https://social-media-hazel.vercel.app/posts/${_id}`, {
 
             method: 'POST',
             headers: {

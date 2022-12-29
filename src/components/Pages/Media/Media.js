@@ -8,7 +8,7 @@ const Media = () => {
     const { data: posts = [], refetch, isLoading } = useQuery({
         queryKey: ['posts'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/post');
+            const res = await fetch('https://social-media-hazel.vercel.app/post');
             const data = await res.json();
             return data
         }

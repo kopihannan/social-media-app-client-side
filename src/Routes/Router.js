@@ -20,7 +20,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/details/:id', element: <PostDetails></PostDetails>,
-                loader: ({params})=> fetch(`http://localhost:5000/post/${params.id}`)
+                loader: ({params})=> fetch(`https://social-media-hazel.vercel.app/post/${params.id}`)
             },
             {
                 path: '/login', element: <Login></Login>

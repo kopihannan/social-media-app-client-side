@@ -19,7 +19,7 @@ const AboutModal = () => {
             name, email, university, address, phone, skill
         }
 
-        fetch('http://localhost:5000/profile', {
+        fetch('https://social-media-hazel.vercel.app/profile', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
